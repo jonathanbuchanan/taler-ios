@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D14AFD2124D232B300C51073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2024D232B300C51073 /* AppDelegate.swift */; };
+		D14AFD2324D232B300C51073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2224D232B300C51073 /* SceneDelegate.swift */; };
+		D14AFD2524D232B300C51073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2424D232B300C51073 /* ContentView.swift */; };
+		D14AFD2724D232B500C51073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14AFD2624D232B500C51073 /* Assets.xcassets */; };
+		D14AFD2A24D232B500C51073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14AFD2924D232B500C51073 /* Preview Assets.xcassets */; };
+		D14AFD2D24D232B500C51073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14AFD2B24D232B500C51073 /* LaunchScreen.storyboard */; };
+		D14AFD3824D232B500C51073 /* TalerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD3724D232B500C51073 /* TalerTests.swift */; };
+		D14AFD4324D232B500C51073 /* TalerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD4224D232B500C51073 /* TalerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D14AFD3424D232B500C51073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D14AFD1524D232B300C51073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14AFD1C24D232B300C51073;
+			remoteInfo = Taler;
+		};
+		D14AFD3F24D232B500C51073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D14AFD1524D232B300C51073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14AFD1C24D232B300C51073;
+			remoteInfo = Taler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D14AFD1D24D232B300C51073 /* Taler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14AFD2024D232B300C51073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D14AFD2224D232B300C51073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D14AFD2424D232B300C51073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D14AFD2624D232B500C51073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D14AFD2924D232B500C51073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D14AFD2C24D232B500C51073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D14AFD2E24D232B500C51073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14AFD3324D232B500C51073 /* TalerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14AFD3724D232B500C51073 /* TalerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalerTests.swift; sourceTree = "<group>"; };
+		D14AFD3924D232B500C51073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14AFD3E24D232B500C51073 /* TalerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14AFD4224D232B500C51073 /* TalerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalerUITests.swift; sourceTree = "<group>"; };
+		D14AFD4424D232B500C51073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D14AFD1A24D232B300C51073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14AFD3024D232B500C51073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14AFD3B24D232B500C51073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D14AFD1424D232B300C51073 = {
+			isa = PBXGroup;
+			children = (
+				D14AFD1F24D232B300C51073 /* Taler */,
+				D14AFD3624D232B500C51073 /* TalerTests */,
+				D14AFD4124D232B500C51073 /* TalerUITests */,
+				D14AFD1E24D232B300C51073 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D14AFD1E24D232B300C51073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D14AFD1D24D232B300C51073 /* Taler.app */,
+				D14AFD3324D232B500C51073 /* TalerTests.xctest */,
+				D14AFD3E24D232B500C51073 /* TalerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D14AFD1F24D232B300C51073 /* Taler */ = {
+			isa = PBXGroup;
+			children = (
+				D14AFD2024D232B300C51073 /* AppDelegate.swift */,
+				D14AFD2224D232B300C51073 /* SceneDelegate.swift */,
+				D14AFD2424D232B300C51073 /* ContentView.swift */,
+				D14AFD2624D232B500C51073 /* Assets.xcassets */,
+				D14AFD2B24D232B500C51073 /* LaunchScreen.storyboard */,
+				D14AFD2E24D232B500C51073 /* Info.plist */,
+				D14AFD2824D232B500C51073 /* Preview Content */,
+			);
+			path = Taler;
+			sourceTree = "<group>";
+		};
+		D14AFD2824D232B500C51073 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D14AFD2924D232B500C51073 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D14AFD3624D232B500C51073 /* TalerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D14AFD3724D232B500C51073 /* TalerTests.swift */,
+				D14AFD3924D232B500C51073 /* Info.plist */,
+			);
+			path = TalerTests;
+			sourceTree = "<group>";
+		};
+		D14AFD4124D232B500C51073 /* TalerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D14AFD4224D232B500C51073 /* TalerUITests.swift */,
+				D14AFD4424D232B500C51073 /* Info.plist */,
+			);
+			path = TalerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D14AFD1C24D232B300C51073 /* Taler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14AFD4724D232B500C51073 /* Build configuration list for PBXNativeTarget "Taler" */;
+			buildPhases = (
+				D14AFD1924D232B300C51073 /* Sources */,
+				D14AFD1A24D232B300C51073 /* Frameworks */,
+				D14AFD1B24D232B300C51073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taler;
+			productName = Taler;
+			productReference = D14AFD1D24D232B300C51073 /* Taler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D14AFD3224D232B500C51073 /* TalerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14AFD4A24D232B500C51073 /* Build configuration list for PBXNativeTarget "TalerTests" */;
+			buildPhases = (
+				D14AFD2F24D232B500C51073 /* Sources */,
+				D14AFD3024D232B500C51073 /* Frameworks */,
+				D14AFD3124D232B500C51073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14AFD3524D232B500C51073 /* PBXTargetDependency */,
+			);
+			name = TalerTests;
+			productName = TalerTests;
+			productReference = D14AFD3324D232B500C51073 /* TalerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D14AFD3D24D232B500C51073 /* TalerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14AFD4D24D232B500C51073 /* Build configuration list for PBXNativeTarget "TalerUITests" */;
+			buildPhases = (
+				D14AFD3A24D232B500C51073 /* Sources */,
+				D14AFD3B24D232B500C51073 /* Frameworks */,
+				D14AFD3C24D232B500C51073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14AFD4024D232B500C51073 /* PBXTargetDependency */,
+			);
+			name = TalerUITests;
+			productName = TalerUITests;
+			productReference = D14AFD3E24D232B500C51073 /* TalerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D14AFD1524D232B300C51073 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Taler;
+				TargetAttributes = {
+					D14AFD1C24D232B300C51073 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D14AFD3224D232B500C51073 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D14AFD1C24D232B300C51073;
+					};
+					D14AFD3D24D232B500C51073 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D14AFD1C24D232B300C51073;
+					};
+				};
+			};
+			buildConfigurationList = D14AFD1824D232B300C51073 /* Build configuration list for PBXProject "Taler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D14AFD1424D232B300C51073;
+			productRefGroup = D14AFD1E24D232B300C51073 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D14AFD1C24D232B300C51073 /* Taler */,
+				D14AFD3224D232B500C51073 /* TalerTests */,
+				D14AFD3D24D232B500C51073 /* TalerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D14AFD1B24D232B300C51073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14AFD2D24D232B500C51073 /* LaunchScreen.storyboard in Resources */,
+				D14AFD2A24D232B500C51073 /* Preview Assets.xcassets in Resources */,
+				D14AFD2724D232B500C51073 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14AFD3124D232B500C51073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14AFD3C24D232B500C51073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D14AFD1924D232B300C51073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14AFD2124D232B300C51073 /* AppDelegate.swift in Sources */,
+				D14AFD2324D232B300C51073 /* SceneDelegate.swift in Sources */,
+				D14AFD2524D232B300C51073 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14AFD2F24D232B500C51073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14AFD3824D232B500C51073 /* TalerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14AFD3A24D232B500C51073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14AFD4324D232B500C51073 /* TalerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D14AFD3524D232B500C51073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14AFD1C24D232B300C51073 /* Taler */;
+			targetProxy = D14AFD3424D232B500C51073 /* PBXContainerItemProxy */;
+		};
+		D14AFD4024D232B500C51073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14AFD1C24D232B300C51073 /* Taler */;
+			targetProxy = D14AFD3F24D232B500C51073 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D14AFD2B24D232B500C51073 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D14AFD2C24D232B500C51073 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D14AFD4524D232B500C51073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D14AFD4624D232B500C51073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D14AFD4824D232B500C51073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Taler/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Taler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taler.Taler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D14AFD4924D232B500C51073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Taler/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Taler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taler.Taler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D14AFD4B24D232B500C51073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taler.TalerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taler.app/Taler";
+			};
+			name = Debug;
+		};
+		D14AFD4C24D232B500C51073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taler.TalerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taler.app/Taler";
+			};
+			name = Release;
+		};
+		D14AFD4E24D232B500C51073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taler.TalerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Taler;
+			};
+			name = Debug;
+		};
+		D14AFD4F24D232B500C51073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taler.TalerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Taler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D14AFD1824D232B300C51073 /* Build configuration list for PBXProject "Taler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14AFD4524D232B500C51073 /* Debug */,
+				D14AFD4624D232B500C51073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14AFD4724D232B500C51073 /* Build configuration list for PBXNativeTarget "Taler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14AFD4824D232B500C51073 /* Debug */,
+				D14AFD4924D232B500C51073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14AFD4A24D232B500C51073 /* Build configuration list for PBXNativeTarget "TalerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14AFD4B24D232B500C51073 /* Debug */,
+				D14AFD4C24D232B500C51073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14AFD4D24D232B500C51073 /* Build configuration list for PBXNativeTarget "TalerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14AFD4E24D232B500C51073 /* Debug */,
+				D14AFD4F24D232B500C51073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D14AFD1524D232B300C51073 /* Project object */;
+}
