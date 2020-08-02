@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D13B019A24D2B0F700ADBE8C /* TalerWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13B019924D2B0F700ADBE8C /* TalerWallet.framework */; };
+		D13B019B24D2B0F700ADBE8C /* TalerWallet.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = D13B019924D2B0F700ADBE8C /* TalerWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D14AFD2124D232B300C51073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2024D232B300C51073 /* AppDelegate.swift */; };
 		D14AFD2324D232B300C51073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2224D232B300C51073 /* SceneDelegate.swift */; };
 		D14AFD2524D232B300C51073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2424D232B300C51073 /* ContentView.swift */; };
@@ -34,7 +36,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D13B019624D2AC0F00ADBE8C /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D13B019B24D2B0F700ADBE8C /* TalerWallet.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D13B019924D2B0F700ADBE8C /* TalerWallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TalerWallet.framework; path = "wallet-kotlin/build/bin/iosX64/debugFramework/TalerWallet.framework"; sourceTree = "<group>"; };
 		D14AFD1D24D232B300C51073 /* Taler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14AFD2024D232B300C51073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D14AFD2224D232B300C51073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13B019A24D2B0F700ADBE8C /* TalerWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 				D14AFD3624D232B500C51073 /* TalerTests */,
 				D14AFD4124D232B500C51073 /* TalerUITests */,
 				D14AFD1E24D232B300C51073 /* Products */,
+				D1EFA41824D2619B0008B97F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +155,14 @@
 			path = TalerUITests;
 			sourceTree = "<group>";
 		};
+		D1EFA41824D2619B0008B97F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D13B019924D2B0F700ADBE8C /* TalerWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +173,7 @@
 				D14AFD1924D232B300C51073 /* Sources */,
 				D14AFD1A24D232B300C51073 /* Frameworks */,
 				D14AFD1B24D232B300C51073 /* Resources */,
+				D13B019624D2AC0F00ADBE8C /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -437,11 +465,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Taler/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wallet-kotlin/build/bin/iosX64/debugFramework",
+					"$(PROJECT_DIR)/wallet-kotlin/build/bin/iosArm64/debugFramework",
+					"$(PROJECT_DIR)/wallet-kotlin/build/bin/iosX64/releaseFramework",
+				);
 				INFOPLIST_FILE = Taler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taler.Taler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -456,11 +491,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Taler/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wallet-kotlin/build/bin/iosX64/debugFramework",
+					"$(PROJECT_DIR)/wallet-kotlin/build/bin/iosArm64/debugFramework",
+					"$(PROJECT_DIR)/wallet-kotlin/build/bin/iosX64/releaseFramework",
+				);
 				INFOPLIST_FILE = Taler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taler.Taler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
