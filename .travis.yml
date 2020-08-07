@@ -2,3 +2,4 @@ os: osx
 language: swift
 xcode_project: Taler.xcodeproj
 xcode_scheme: Taler
+osx_image: xcode11.6
