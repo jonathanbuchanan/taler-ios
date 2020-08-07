@@ -1,3 +1,4 @@
 os: osx
 language: swift
 xcode_project: Taler.xcodeproj
+xcode_scheme: Taler
