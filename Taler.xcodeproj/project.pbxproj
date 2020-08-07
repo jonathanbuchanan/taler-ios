@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D13B019A24D2B0F700ADBE8C /* TalerWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13B019924D2B0F700ADBE8C /* TalerWallet.framework */; };
-		D13B019B24D2B0F700ADBE8C /* TalerWallet.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = D13B019924D2B0F700ADBE8C /* TalerWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D14AFD2124D232B300C51073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2024D232B300C51073 /* AppDelegate.swift */; };
 		D14AFD2324D232B300C51073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2224D232B300C51073 /* SceneDelegate.swift */; };
 		D14AFD2524D232B300C51073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD2424D232B300C51073 /* ContentView.swift */; };
@@ -17,6 +15,8 @@
 		D14AFD2D24D232B500C51073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14AFD2B24D232B500C51073 /* LaunchScreen.storyboard */; };
 		D14AFD3824D232B500C51073 /* TalerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD3724D232B500C51073 /* TalerTests.swift */; };
 		D14AFD4324D232B500C51073 /* TalerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD4224D232B500C51073 /* TalerUITests.swift */; };
+		D1CC111B24DA0AF300998692 /* TalerWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13B019924D2B0F700ADBE8C /* TalerWallet.framework */; };
+		D1CC111C24DA0AF300998692 /* TalerWallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D13B019924D2B0F700ADBE8C /* TalerWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D13B019624D2AC0F00ADBE8C /* Copy Files */ = {
+		D1CC111D24DA0AF300998692 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D13B019B24D2B0F700ADBE8C /* TalerWallet.framework in Copy Files */,
+				D1CC111C24DA0AF300998692 /* TalerWallet.framework in Embed Frameworks */,
 			);
-			name = "Copy Files";
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -66,6 +66,7 @@
 		D14AFD3E24D232B500C51073 /* TalerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14AFD4224D232B500C51073 /* TalerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalerUITests.swift; sourceTree = "<group>"; };
 		D14AFD4424D232B500C51073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CC111724DA093200998692 /* TalerWallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TalerWallet.framework; path = "wallet-kotlin/build/bin/iosX64/releaseFramework/TalerWallet.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13B019A24D2B0F700ADBE8C /* TalerWallet.framework in Frameworks */,
+				D1CC111B24DA0AF300998692 /* TalerWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +159,7 @@
 		D1EFA41824D2619B0008B97F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1CC111724DA093200998692 /* TalerWallet.framework */,
 				D13B019924D2B0F700ADBE8C /* TalerWallet.framework */,
 			);
 			name = Frameworks;
@@ -170,10 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D14AFD4724D232B500C51073 /* Build configuration list for PBXNativeTarget "Taler" */;
 			buildPhases = (
+				D10ADA7824DD231700D8863C /* ShellScript */,
 				D14AFD1924D232B300C51073 /* Sources */,
 				D14AFD1A24D232B300C51073 /* Frameworks */,
 				D14AFD1B24D232B300C51073 /* Resources */,
-				D13B019624D2AC0F00ADBE8C /* Copy Files */,
+				D1CC111D24DA0AF300998692 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +292,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D10ADA7824DD231700D8863C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$SRCROOT/wallet-kotlin\"\n./gradlew publishIosX64PublicationToMavenLocal\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D14AFD1924D232B300C51073 /* Sources */ = {
